@@ -1,0 +1,155 @@
+1、首先安装node.js
+需要下载安装包手动安装
+
+2、使用npm安装yarn
+npm install -g yarn
+
+初始化工程，生成package.json
+yarn init
+
+在当前工程下添加package，存放在node_modules
+yarn add  package_name
+
+3、建立public文件夹，用于存放所有想要显示的html页面
+建立src文件夹，用于保存源码
+
+4、安装live-server
+yarn global add live-server
+npm install -g live-server
+
+yarn global remove
+npm uninstall -g 
+
+可以用live-server public 来显示网页
+
+5、安装babel
+yarn global add babel-cli
+npm install -g babel-cli
+
+将babel react添加到工程
+yarn add babel-preset-react babel-preset-env
+
+手动babel编译单个文件
+babel filename.js --out-file=out_file_name.js --presets=env,react --watch
+
+
+6、利用react dev tools 方便debug以及看整体app架构
+直接搜索react dev tools
+
+7、webpack
+安装webpack
+yarn add webpack
+
+***建立webpack.config.js
+编写module.exports
+
+在package.json中设置scripts来设置一些webpack打包时会执行的命令
+
+运行live-server:
+"server": "live-server public/"
+可以通过yarn run server执行
+
+babel 配合webpack
+yarn add babel-core babel-loader
+
+设置babel的loader
+module: {
+    rule: [{
+        "loader": "babel-loader",
+        "test": /\.js$/,
+        "exclude": /node_modules/
+    }]
+}
+建立文件.babelrc
+{
+    "presets": [
+        "env",
+        "react"
+    ]
+}
+
+webpack dev tools
+devtool: "cheap-module-eval-source-map"
+
+webpack dev server
+yarn add webpack-dev-server
+devServer: {
+    contentBase: path.join(__dirname, 'public')
+}
+add scripts in package.json
+"dev-server": "webpack-dev-server"
+
+webpack with SASS
+安装css loader
+yarn add style-loader css-loader sass-loader node-sass
+{
+            "test": /\.scss$/,
+            "use": [
+                "style-loader",
+                "css-loader"
+            ]
+        }
+in js files use:
+import './styles/styles.scss'; to use css
+
+normalize.css
+yarn add normalize.css
+
+8、add react react-dom
+yarn add react react-dom
+import React from 'react'
+import ReactDOM from 'reactDOM'
+
+9、react router
+yarn add react-router // all router components
+yarn add react-router-dom // router for web development
+yarn add react-router-native // router for ios and andorid
+
+10、redux
+yarn add redux
+
+import { createStore } from 'redux'
+
+redux reducer
+
+一、createStore，store里面包含state的不同reducer，由combineReducers打包
+二、reducer根据（state，action）通过switch来触发不同case事件，并返回新的state（action.XXX）
+三、定义对应的action，返回一个object，type定义action name，后续属性用于改变state，通过传入值来构建这个object
+四、调用时通过dispatch调用对应的action
+
+组件：
+actions: 一个直接返回object的arrow function，定义事件需要接收的参数并返回一个object，其中用type定义事件名称，其余为传入的参数。
+reducers: 分割全部的state到相互关联的不同部分，是一个arrow function，接收state与action，根据action。type做对应的state处理。
+selectors: 从store中查询相应reducer中的state状态
+store: 定义reducer中包含的state
+
+与react联合使用需要react-redux
+yarn add react-redux
+
+Redux dev tool
+
+11、uuid
+generate id
+yarn add uuid
+
+12、jest 
+自动测试框架
+
+13、react-test-renderer
+简化版，不推荐
+
+14、enzyme
+for test react components，功能较为完整
+yarn add enzyme enzyme-adapter-react-16
+
+import { shallow } from 'enzyme';
+
+yarn add identity-obj-proxy babel-jest
+用于解决test file中有import css文件的问题
+jest.config.json中添加以下内容：
+"jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
