@@ -95,6 +95,9 @@ import './styles/styles.scss'; to use css
 normalize.css
 yarn add normalize.css
 
+webpack for production
+webpack -p
+
 8、add react react-dom
 yarn add react react-dom
 import React from 'react'
