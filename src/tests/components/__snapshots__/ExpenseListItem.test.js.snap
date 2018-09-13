@@ -34,11 +34,11 @@ ShallowWrapper {
         </Link>,
         <p>
           amount: 
-          195
+          $195.00
         </p>,
         <p>
           createdAt: 
-          0
+          1970-01-01
         </p>,
       ],
     },
@@ -83,13 +83,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "amount: ",
-            195,
+            "$195.00",
           ],
         },
         "ref": null,
         "rendered": Array [
           "amount: ",
-          195,
+          "$195.00",
         ],
         "type": "p",
       },
@@ -100,13 +100,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "createdAt: ",
-            0,
+            "1970-01-01",
           ],
         },
         "ref": null,
         "rendered": Array [
           "createdAt: ",
-          0,
+          "1970-01-01",
         ],
         "type": "p",
       },
@@ -131,11 +131,11 @@ ShallowWrapper {
           </Link>,
           <p>
             amount: 
-            195
+            $195.00
           </p>,
           <p>
             createdAt: 
-            0
+            1970-01-01
           </p>,
         ],
       },
@@ -180,13 +180,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "amount: ",
-              195,
+              "$195.00",
             ],
           },
           "ref": null,
           "rendered": Array [
             "amount: ",
-            195,
+            "$195.00",
           ],
           "type": "p",
         },
@@ -197,13 +197,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "createdAt: ",
-              0,
+              "1970-01-01",
             ],
           },
           "ref": null,
           "rendered": Array [
             "createdAt: ",
-            0,
+            "1970-01-01",
           ],
           "type": "p",
         },

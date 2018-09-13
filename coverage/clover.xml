@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536047079304" clover="3.2.0">
-  <project timestamp="1536047079304" name="All files">
+<coverage generated="1536808997528" clover="3.2.0">
+  <project timestamp="1536808997528" name="All files">
     <metrics statements="118" coveredstatements="104" conditionals="62" coveredconditionals="52" methods="65" coveredmethods="48" elements="245" coveredelements="204" complexity="0" loc="118" ncloc="118" packages="6" files="17" classes="17">
       <package name="actions">
         <metrics statements="16" coveredstatements="16" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="8"/>
@@ -112,8 +112,8 @@
         </file>
         <file name="ExpenseListItem.js" path="D:\github\expensive-app\src\components\ExpenseListItem.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="4" count="3" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
         </file>
         <file name="Header.js" path="D:\github\expensive-app\src\components\Header.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
