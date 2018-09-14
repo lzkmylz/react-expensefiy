@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536808997528" clover="3.2.0">
-  <project timestamp="1536808997528" name="All files">
-    <metrics statements="118" coveredstatements="104" conditionals="62" coveredconditionals="52" methods="65" coveredmethods="48" elements="245" coveredelements="204" complexity="0" loc="118" ncloc="118" packages="6" files="17" classes="17">
+<coverage generated="1536930964953" clover="3.2.0">
+  <project timestamp="1536930964953" name="All files">
+    <metrics statements="121" coveredstatements="107" conditionals="62" coveredconditionals="52" methods="68" coveredmethods="51" elements="251" coveredelements="210" complexity="0" loc="121" ncloc="121" packages="6" files="18" classes="18">
       <package name="actions">
         <metrics statements="16" coveredstatements="16" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="8"/>
         <file name="expenses.js" path="D:\github\expensive-app\src\actions\expenses.js">
@@ -155,7 +155,7 @@
         </file>
       </package>
       <package name="selectors">
-        <metrics statements="10" coveredstatements="10" conditionals="15" coveredconditionals="14" methods="3" coveredmethods="3"/>
+        <metrics statements="13" coveredstatements="13" conditionals="15" coveredconditionals="14" methods="6" coveredmethods="6"/>
         <file name="expense.js" path="D:\github\expensive-app\src\selectors\expense.js">
           <metrics statements="10" coveredstatements="10" conditionals="15" coveredconditionals="14" methods="3" coveredmethods="3"/>
           <line num="5" count="5" type="stmt"/>
@@ -169,12 +169,18 @@
           <line num="15" count="3" type="cond" truecount="1" falsecount="1"/>
           <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
         </file>
+        <file name="expenses-total.js" path="D:\github\expensive-app\src\selectors\expenses-total.js">
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="2" count="4" type="stmt"/>
+          <line num="3" count="4" type="stmt"/>
+          <line num="4" count="3" type="stmt"/>
+        </file>
       </package>
       <package name="tests">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="setupTests.js" path="D:\github\expensive-app\src\tests\setupTests.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="4" count="14" type="stmt"/>
+          <line num="4" count="15" type="stmt"/>
         </file>
       </package>
       <package name="tests.fixtures">
