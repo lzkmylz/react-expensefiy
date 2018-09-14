@@ -156,3 +156,6 @@ jest.config.json中添加以下内容：
       "\\.(css|less)$": "identity-obj-proxy"
     }
   }
+
+  15、 heroku deploy
+  git push geroku master

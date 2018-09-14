@@ -20,7 +20,7 @@ const expenses = [
         note: '',
         amount: 4500,
         createdAt: moment(0).add(4, 'days').valueOf()
-    },
+    }
 ];
 
 test('should return 0 for no expenses', () => {
