@@ -157,5 +157,11 @@ jest.config.json中添加以下内容：
     }
   }
 
-  15、 heroku deploy
-  git push geroku master
+15、 heroku deploy
+git push geroku master
+
+16、Firebase database
+real time database
+authentication system
+
+use redux-thunk to communicate with firebase

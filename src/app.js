@@ -5,12 +5,10 @@ import 'react-dates/initialize';
 
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-import { addExpense } from './actions/expenses';
-import { setTextFilter } from './actions/filters';
-import getVisiableExpenses from './selectors/expense';
+import './firebase/firebase';
 
-import 'normalize.css/normalize.css'
-import './styles/styles.scss'
+import 'normalize.css/normalize.css';
+import './styles/styles.scss';
 
 const store = configureStore();
 
