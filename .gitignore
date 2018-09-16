@@ -1,4 +1,4 @@
 node_modules/
 public/dist/
 coverage/
-src/firebase
+src/firebase/
