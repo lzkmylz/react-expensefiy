@@ -4,12 +4,12 @@ exports[`should render AddExpensePage correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AddExpensePage
-    addExpense={[MockFunction]}
     history={
       Object {
         "push": [MockFunction],
       }
     }
+    startExportAddExpense={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

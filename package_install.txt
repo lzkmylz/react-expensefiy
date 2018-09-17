@@ -165,3 +165,6 @@ real time database
 authentication system
 
 use redux-thunk to communicate with firebase
+
+in test how to mock firebase database and the store of redux
+use redux-mock-store 
