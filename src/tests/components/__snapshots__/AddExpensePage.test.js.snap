@@ -9,7 +9,7 @@ ShallowWrapper {
         "push": [MockFunction],
       }
     }
-    startExportAddExpense={[MockFunction]}
+    startAddExpense={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

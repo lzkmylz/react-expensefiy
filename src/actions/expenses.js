@@ -9,7 +9,7 @@ export const addExpense = (expense) => (
     }
 );
 
-export const startExportAddExpense = (expenseData = {}) => {
+export const startAddExpense = (expenseData = {}) => {
     return (dispatch) => {
         const {
             description = '',

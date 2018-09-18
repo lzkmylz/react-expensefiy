@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1537192866995" clover="3.2.0">
-  <project timestamp="1537192866995" name="All files">
-    <metrics statements="136" coveredstatements="116" conditionals="62" coveredconditionals="52" methods="73" coveredmethods="52" elements="271" coveredelements="220" complexity="0" loc="136" ncloc="136" packages="7" files="20" classes="20">
+<coverage generated="1537252857687" clover="3.2.0">
+  <project timestamp="1537252857687" name="All files">
+    <metrics statements="135" coveredstatements="119" conditionals="62" coveredconditionals="56" methods="73" coveredmethods="54" elements="270" coveredelements="229" complexity="0" loc="135" ncloc="135" packages="7" files="20" classes="20">
       <package name="actions">
-        <metrics statements="22" coveredstatements="17" conditionals="7" coveredconditionals="0" methods="11" coveredmethods="8"/>
+        <metrics statements="22" coveredstatements="21" conditionals="7" coveredconditionals="4" methods="11" coveredmethods="10"/>
         <file name="expenses.js" path="D:\github\expensive-app\src\actions\expenses.js">
-          <metrics statements="12" coveredstatements="7" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="3"/>
+          <metrics statements="12" coveredstatements="11" conditionals="6" coveredconditionals="4" methods="6" coveredmethods="5"/>
           <line num="5" count="3" type="stmt"/>
           <line num="6" count="1" type="stmt"/>
           <line num="12" count="3" type="cond" truecount="0" falsecount="1"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="26" count="2" type="stmt"/>
           <line num="27" count="0" type="stmt"/>
           <line num="36" count="3" type="cond" truecount="0" falsecount="1"/>
           <line num="37" count="1" type="stmt"/>
@@ -140,13 +140,12 @@
         </file>
       </package>
       <package name="firebase">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="firebase.js" path="D:\github\expensive-app\src\firebase\firebase.js">
-          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="3" count="3" type="stmt"/>
-          <line num="5" count="3" type="stmt"/>
-          <line num="14" count="3" type="stmt"/>
-          <line num="15" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="13" count="3" type="stmt"/>
         </file>
       </package>
       <package name="reducers">
