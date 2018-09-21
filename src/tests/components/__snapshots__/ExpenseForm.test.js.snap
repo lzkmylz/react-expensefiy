@@ -846,7 +846,7 @@ ShallowWrapper {
         "amount": 19500,
         "createdAt": -259200000,
         "description": "Rent",
-        "id": 2,
+        "id": "2",
         "note": "",
       }
     }

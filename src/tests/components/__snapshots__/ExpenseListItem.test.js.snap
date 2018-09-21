@@ -7,7 +7,7 @@ ShallowWrapper {
     amount={195}
     createdAt={0}
     description="Gum"
-    id={1}
+    id="1"
     note=""
   />,
   Symbol(enzyme.__renderer__): Object {

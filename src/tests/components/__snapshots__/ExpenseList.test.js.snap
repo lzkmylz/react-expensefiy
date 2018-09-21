@@ -129,21 +129,21 @@ ShallowWrapper {
           "amount": 195,
           "createdAt": 0,
           "description": "Gum",
-          "id": 1,
+          "id": "1",
           "note": "",
         },
         Object {
           "amount": 19500,
           "createdAt": -259200000,
           "description": "Rent",
-          "id": 2,
+          "id": "2",
           "note": "",
         },
         Object {
           "amount": 200,
           "createdAt": 345600000,
           "description": "Credit Card",
-          "id": 3,
+          "id": "3",
           "note": "",
         },
       ]
@@ -170,21 +170,21 @@ ShallowWrapper {
             amount={195}
             createdAt={0}
             description="Gum"
-            id={1}
+            id="1"
             note=""
           />,
           <ExpenseListItem
             amount={19500}
             createdAt={-259200000}
             description="Rent"
-            id={2}
+            id="2"
             note=""
           />,
           <ExpenseListItem
             amount={200}
             createdAt={345600000}
             description="Credit Card"
-            id={3}
+            id="3"
             note=""
           />,
         ],
@@ -211,7 +211,7 @@ ShallowWrapper {
           "amount": 195,
           "createdAt": 0,
           "description": "Gum",
-          "id": 1,
+          "id": "1",
           "note": "",
         },
         "ref": null,
@@ -226,7 +226,7 @@ ShallowWrapper {
           "amount": 19500,
           "createdAt": -259200000,
           "description": "Rent",
-          "id": 2,
+          "id": "2",
           "note": "",
         },
         "ref": null,
@@ -241,7 +241,7 @@ ShallowWrapper {
           "amount": 200,
           "createdAt": 345600000,
           "description": "Credit Card",
-          "id": 3,
+          "id": "3",
           "note": "",
         },
         "ref": null,
@@ -266,21 +266,21 @@ ShallowWrapper {
               amount={195}
               createdAt={0}
               description="Gum"
-              id={1}
+              id="1"
               note=""
             />,
             <ExpenseListItem
               amount={19500}
               createdAt={-259200000}
               description="Rent"
-              id={2}
+              id="2"
               note=""
             />,
             <ExpenseListItem
               amount={200}
               createdAt={345600000}
               description="Credit Card"
-              id={3}
+              id="3"
               note=""
             />,
           ],
@@ -307,7 +307,7 @@ ShallowWrapper {
             "amount": 195,
             "createdAt": 0,
             "description": "Gum",
-            "id": 1,
+            "id": "1",
             "note": "",
           },
           "ref": null,
@@ -322,7 +322,7 @@ ShallowWrapper {
             "amount": 19500,
             "createdAt": -259200000,
             "description": "Rent",
-            "id": 2,
+            "id": "2",
             "note": "",
           },
           "ref": null,
@@ -337,7 +337,7 @@ ShallowWrapper {
             "amount": 200,
             "createdAt": 345600000,
             "description": "Credit Card",
-            "id": 3,
+            "id": "3",
             "note": "",
           },
           "ref": null,

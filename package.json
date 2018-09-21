@@ -27,7 +27,6 @@
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "firebase": "^5.5.0",
-    "firemock": "^0.18.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^23.5.0",
     "live-server": "^1.2.0",

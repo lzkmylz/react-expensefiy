@@ -10,7 +10,7 @@ ShallowWrapper {
         "amount": 195,
         "createdAt": 0,
         "description": "Gum",
-        "id": 1,
+        "id": "1",
         "note": "",
       }
     }
@@ -40,7 +40,7 @@ ShallowWrapper {
               "amount": 195,
               "createdAt": 0,
               "description": "Gum",
-              "id": 1,
+              "id": "1",
               "note": "",
             }
           }
@@ -64,7 +64,7 @@ ShallowWrapper {
             "amount": 195,
             "createdAt": 0,
             "description": "Gum",
-            "id": 1,
+            "id": "1",
             "note": "",
           },
           "onSubmit": [Function],
@@ -101,7 +101,7 @@ ShallowWrapper {
                 "amount": 195,
                 "createdAt": 0,
                 "description": "Gum",
-                "id": 1,
+                "id": "1",
                 "note": "",
               }
             }
@@ -125,7 +125,7 @@ ShallowWrapper {
               "amount": 195,
               "createdAt": 0,
               "description": "Gum",
-              "id": 1,
+              "id": "1",
               "note": "",
             },
             "onSubmit": [Function],
