@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1537520913070" clover="3.2.0">
-  <project timestamp="1537520913070" name="All files">
-    <metrics statements="144" coveredstatements="129" conditionals="63" coveredconditionals="57" methods="78" coveredmethods="60" elements="285" coveredelements="246" complexity="0" loc="144" ncloc="144" packages="7" files="20" classes="20">
+<coverage generated="1537604325703" clover="3.2.0">
+  <project timestamp="1537604325703" name="All files">
+    <metrics statements="150" coveredstatements="135" conditionals="64" coveredconditionals="57" methods="81" coveredmethods="63" elements="295" coveredelements="255" complexity="0" loc="150" ncloc="150" packages="7" files="20" classes="20">
       <package name="actions">
-        <metrics statements="30" coveredstatements="30" conditionals="7" coveredconditionals="4" methods="16" coveredmethods="16"/>
+        <metrics statements="36" coveredstatements="36" conditionals="8" coveredconditionals="4" methods="19" coveredmethods="19"/>
         <file name="expenses.js" path="D:\github\expensive-app\src\actions\expenses.js">
-          <metrics statements="20" coveredstatements="20" conditionals="6" coveredconditionals="4" methods="11" coveredmethods="11"/>
+          <metrics statements="26" coveredstatements="26" conditionals="7" coveredconditionals="4" methods="14" coveredmethods="14"/>
           <line num="5" count="3" type="stmt"/>
           <line num="6" count="3" type="stmt"/>
           <line num="12" count="3" type="cond" truecount="0" falsecount="1"/>
@@ -15,17 +15,23 @@
           <line num="26" count="2" type="stmt"/>
           <line num="27" count="2" type="stmt"/>
           <line num="36" count="3" type="cond" truecount="0" falsecount="1"/>
-          <line num="37" count="1" type="stmt"/>
-          <line num="44" count="3" type="stmt"/>
+          <line num="37" count="2" type="stmt"/>
+          <line num="44" count="3" type="cond" truecount="0" falsecount="1"/>
           <line num="45" count="1" type="stmt"/>
-          <line num="53" count="3" type="stmt"/>
-          <line num="58" count="3" type="stmt"/>
-          <line num="59" count="1" type="stmt"/>
-          <line num="60" count="1" type="stmt"/>
-          <line num="61" count="1" type="stmt"/>
-          <line num="62" count="1" type="stmt"/>
-          <line num="63" count="3" type="stmt"/>
-          <line num="68" count="1" type="stmt"/>
+          <line num="46" count="1" type="stmt"/>
+          <line num="47" count="1" type="stmt"/>
+          <line num="48" count="1" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="55" count="3" type="stmt"/>
+          <line num="56" count="1" type="stmt"/>
+          <line num="64" count="3" type="stmt"/>
+          <line num="69" count="3" type="stmt"/>
+          <line num="70" count="1" type="stmt"/>
+          <line num="71" count="1" type="stmt"/>
+          <line num="72" count="1" type="stmt"/>
+          <line num="73" count="1" type="stmt"/>
+          <line num="74" count="3" type="stmt"/>
+          <line num="79" count="1" type="stmt"/>
         </file>
         <file name="filters.js" path="D:\github\expensive-app\src\actions\filters.js">
           <metrics statements="10" coveredstatements="10" conditionals="1" coveredconditionals="0" methods="5" coveredmethods="5"/>

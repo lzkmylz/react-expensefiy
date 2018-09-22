@@ -19,7 +19,7 @@ ShallowWrapper {
         "push": [MockFunction],
       }
     }
-    removeExpense={[MockFunction]}
+    startRemoveExpense={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
