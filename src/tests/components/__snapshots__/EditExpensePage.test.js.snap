@@ -4,7 +4,6 @@ exports[`should render EditExpensePage correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <EditExpensePage
-    editExpense={[MockFunction]}
     expense={
       Object {
         "amount": 195,
@@ -19,6 +18,7 @@ ShallowWrapper {
         "push": [MockFunction],
       }
     }
+    startEditExpense={[MockFunction]}
     startRemoveExpense={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
