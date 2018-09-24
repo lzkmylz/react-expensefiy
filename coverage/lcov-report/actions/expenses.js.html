@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>31/31</span>
+        <span class='fraction'>35/35</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">57.14% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>30/30</span>
+        <span class='fraction'>34/34</span>
       </div>
     </div>
     <p class="quiet">
@@ -136,7 +136,11 @@
 <a name='L88'></a><a href='#L88'>88</a>
 <a name='L89'></a><a href='#L89'>89</a>
 <a name='L90'></a><a href='#L90'>90</a>
-<a name='L91'></a><a href='#L91'>91</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -148,6 +152,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -185,6 +190,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -203,6 +209,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -214,6 +221,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -238,7 +246,8 @@ export const addExpense = (expense) =&gt; (
 );
 &nbsp;
 export const startAddExpense = (expenseData = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
-    return (dispatch) =&gt; {
+    return (dispatch, getState) =&gt; {
+        const uid = getState().auth.uid;
         const {
             description = '',
             note = '',
@@ -251,7 +260,7 @@ export const startAddExpense = (expenseData = <span class="branch-0 cbranch-no" 
             amount,
             createdAt
         };
-        return database.ref('expenses').push(expense).then((ref) =&gt; {
+        return database.ref(`users/${uid}/expenses`).push(expense).then((ref) =&gt; {
             dispatch(addExpense({
                 id: ref.key,
                 ...expense
@@ -270,9 +279,10 @@ export const removeExpense = ({ id } = <span class="branch-0 cbranch-no" title="
 &nbsp;
 //START REMOVE EXPENSE
 export const startRemoveExpense = ({ id } = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; {
-    return (dispatch) =&gt; {
+    return (dispatch, getState) =&gt; {
+        const uid = getState().auth.uid;
         const updates = {};
-        updates['/expenses/' + id] = null;
+        updates[`users/${uid}/expenses/${id}`] = null;
         return database.ref().update(updates).then(() =&gt; {
             dispatch(removeExpense({ id }));
         });
@@ -290,8 +300,9 @@ export const editExpense = (id, updates) =&gt; (
 &nbsp;
 //START EDIT EXPENSE
 export const startEditExpense = (id, updates) =&gt; {
-    return (dispatch) =&gt; {
-        return database.ref('expenses/' + id).update(updates).then(() =&gt; {
+    return (dispatch, getState) =&gt; {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/expenses/${id}`).update(updates).then(() =&gt; {
             dispatch(editExpense(id, updates));
         });
     };
@@ -304,8 +315,9 @@ export const setExpenses = (expenses) =&gt; ({
 });
 &nbsp;
 export const startSetExpenses = () =&gt; {
-    return (dispatch) =&gt; {
-        return database.ref('expenses').once('value').then((snapshot) =&gt; {
+    return (dispatch, getState) =&gt; {
+        const uid = getState().auth.uid;
+        return database.ref(`users/${uid}/expenses`).once('value').then((snapshot) =&gt; {
             const expensesData = [];
             snapshot.forEach((childSnapshot) =&gt; {
                 expensesData.push({
@@ -322,7 +334,7 @@ export const startSetExpenses = () =&gt; {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Sep 24 2018 10:37:37 GMT+0800 (中国标准时间)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Sep 24 2018 19:47:28 GMT+0800 (中国标准时间)
 </div>
 </div>
 <script src="..\prettify.js"></script>
