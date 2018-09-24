@@ -3,6 +3,7 @@ import { Header } from '../../components/Header';
 import { shallow } from 'enzyme';
 
 test('should render Header correctly', () => {
+    const startLogOut = jest.fn();
     const wrapper = shallow(<Header startLogOut={startLogOut} />);
     expect(wrapper).toMatchSnapshot();
 });

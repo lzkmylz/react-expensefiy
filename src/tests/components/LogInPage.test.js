@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import { LogInPage } from '../../components/LogInPage';
 
 test('should render LogInPage correctly', () => {
+    const startLogIn = jest.fn();
     const wrapper = shallow(<LogInPage startLogIn={startLogIn} />);
     expect(wrapper).toMatchSnapshot();
 });
