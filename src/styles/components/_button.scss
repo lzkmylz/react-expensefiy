@@ -15,3 +15,8 @@
     color: white;
     border: none;
 }
+
+.button--secondary {
+    @extend .button;
+    background: #888888;
+}

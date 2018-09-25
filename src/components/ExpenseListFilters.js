@@ -37,7 +37,7 @@ export class ExpenseListFilters extends React.Component {
 
     render() {
         return (
-            <div className="content_container">
+            <div className="content-container">
                 <div className="input-group">
                     <div className="input-group__item">
                         <input 
