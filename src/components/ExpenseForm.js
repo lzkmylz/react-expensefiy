@@ -61,9 +61,9 @@ class ExpenseForm extends React.Component {
                 <form onSubmit={this.onSubmit}>
                     {this.state.errorString && <p>{this.state.errorString}</p>}
                     <input type="text" placeholder="Description" autoFocus 
-                    value={this.state.description} onChange={this.onDescriptionChange} />
+                    value={this.state.description} onChange={this.onDescriptionChange} className="text-input" />
                     <input type="number" placeholder="Amount" value={this.state.amount}
-                    onChange={this.onAmountChange} />
+                    onChange={this.onAmountChange} className="text-input" />
                     <SingleDatePicker 
                         date={this.state.createdAt}
                         onDateChange={this.onDateChange}
@@ -72,7 +72,7 @@ class ExpenseForm extends React.Component {
                         numberOfMonths={1}
                         isOutsideRange={() => false}
                     />
-                    <textarea placeholder="Add a note for your expense (optional)" 
+                    <textarea className="textarea" placeholder="Add a note for your expense (optional)" 
                     value={this.state.note}
                     onChange={this.onNoteChange}></textarea>
                     <button>Add Expense</button>
