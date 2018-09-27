@@ -28,72 +28,71 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <p>
-          expenseCount: 
-          1
-        </p>,
-        <p>
-          expensesTotal: 
-          $195.00
-        </p>,
-      ],
+      "children": <div
+        className="content-container"
+      >
+        <h1
+          className="page-header__title"
+        >
+          Viewing 
+          <span>
+            1
+          </span>
+           
+          expense
+           totaling 
+          <span>
+            $195.00
+          </span>
+        </h1>
+        <div
+          className="page-header_actions"
+        >
+          <Link
+            className="button"
+            replace={false}
+            to="/create"
+          >
+            Add Expense
+          </Link>
+        </div>
+      </div>,
+      "className": "page-header",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "expenseCount: ",
-            1,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "expenseCount: ",
-          1,
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "expensesTotal: ",
-            "$195.00",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "expensesTotal: ",
-          "$195.00",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-            expenseCount: 
-            1
-          </p>,
-          <p>
-            expensesTotal: 
-            $195.00
-          </p>,
+          <h1
+            className="page-header__title"
+          >
+            Viewing 
+            <span>
+              1
+            </span>
+             
+            expense
+             totaling 
+            <span>
+              $195.00
+            </span>
+          </h1>,
+          <div
+            className="page-header_actions"
+          >
+            <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>
+          </div>,
         ],
+        "className": "content-container",
       },
       "ref": null,
       "rendered": Array [
@@ -103,35 +102,244 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "expenseCount: ",
-              1,
+              "Viewing ",
+              <span>
+                1
+              </span>,
+              " ",
+              "expense",
+              " totaling ",
+              <span>
+                $195.00
+              </span>,
             ],
+            "className": "page-header__title",
           },
           "ref": null,
           "rendered": Array [
-            "expenseCount: ",
-            1,
+            "Viewing ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "span",
+            },
+            " ",
+            "expense",
+            " totaling ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "$195.00",
+              },
+              "ref": null,
+              "rendered": "$195.00",
+              "type": "span",
+            },
           ],
-          "type": "p",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "expensesTotal: ",
-              "$195.00",
-            ],
+            "children": <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>,
+            "className": "page-header_actions",
           },
           "ref": null,
-          "rendered": Array [
-            "expensesTotal: ",
-            "$195.00",
-          ],
-          "type": "p",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add Expense",
+              "className": "button",
+              "replace": false,
+              "to": "/create",
+            },
+            "ref": null,
+            "rendered": "Add Expense",
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="content-container"
+        >
+          <h1
+            className="page-header__title"
+          >
+            Viewing 
+            <span>
+              1
+            </span>
+             
+            expense
+             totaling 
+            <span>
+              $195.00
+            </span>
+          </h1>
+          <div
+            className="page-header_actions"
+          >
+            <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>
+          </div>
+        </div>,
+        "className": "page-header",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="page-header__title"
+            >
+              Viewing 
+              <span>
+                1
+              </span>
+               
+              expense
+               totaling 
+              <span>
+                $195.00
+              </span>
+            </h1>,
+            <div
+              className="page-header_actions"
+            >
+              <Link
+                className="button"
+                replace={false}
+                to="/create"
+              >
+                Add Expense
+              </Link>
+            </div>,
+          ],
+          "className": "content-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Viewing ",
+                <span>
+                  1
+                </span>,
+                " ",
+                "expense",
+                " totaling ",
+                <span>
+                  $195.00
+                </span>,
+              ],
+              "className": "page-header__title",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Viewing ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 1,
+                },
+                "ref": null,
+                "rendered": 1,
+                "type": "span",
+              },
+              " ",
+              "expense",
+              " totaling ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "$195.00",
+                },
+                "ref": null,
+                "rendered": "$195.00",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                className="button"
+                replace={false}
+                to="/create"
+              >
+                Add Expense
+              </Link>,
+              "className": "page-header_actions",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Add Expense",
+                "className": "button",
+                "replace": false,
+                "to": "/create",
+              },
+              "ref": null,
+              "rendered": "Add Expense",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
@@ -192,72 +400,71 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <p>
-          expenseCount: 
-          2
-        </p>,
-        <p>
-          expensesTotal: 
-          $109,695.00
-        </p>,
-      ],
+      "children": <div
+        className="content-container"
+      >
+        <h1
+          className="page-header__title"
+        >
+          Viewing 
+          <span>
+            2
+          </span>
+           
+          expenses
+           totaling 
+          <span>
+            $109,695.00
+          </span>
+        </h1>
+        <div
+          className="page-header_actions"
+        >
+          <Link
+            className="button"
+            replace={false}
+            to="/create"
+          >
+            Add Expense
+          </Link>
+        </div>
+      </div>,
+      "className": "page-header",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "expenseCount: ",
-            2,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "expenseCount: ",
-          2,
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "expensesTotal: ",
-            "$109,695.00",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "expensesTotal: ",
-          "$109,695.00",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
-            expenseCount: 
-            2
-          </p>,
-          <p>
-            expensesTotal: 
-            $109,695.00
-          </p>,
+          <h1
+            className="page-header__title"
+          >
+            Viewing 
+            <span>
+              2
+            </span>
+             
+            expenses
+             totaling 
+            <span>
+              $109,695.00
+            </span>
+          </h1>,
+          <div
+            className="page-header_actions"
+          >
+            <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>
+          </div>,
         ],
+        "className": "content-container",
       },
       "ref": null,
       "rendered": Array [
@@ -267,35 +474,244 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "expenseCount: ",
-              2,
+              "Viewing ",
+              <span>
+                2
+              </span>,
+              " ",
+              "expenses",
+              " totaling ",
+              <span>
+                $109,695.00
+              </span>,
             ],
+            "className": "page-header__title",
           },
           "ref": null,
           "rendered": Array [
-            "expenseCount: ",
-            2,
+            "Viewing ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 2,
+              },
+              "ref": null,
+              "rendered": 2,
+              "type": "span",
+            },
+            " ",
+            "expenses",
+            " totaling ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "$109,695.00",
+              },
+              "ref": null,
+              "rendered": "$109,695.00",
+              "type": "span",
+            },
           ],
-          "type": "p",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "expensesTotal: ",
-              "$109,695.00",
-            ],
+            "children": <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>,
+            "className": "page-header_actions",
           },
           "ref": null,
-          "rendered": Array [
-            "expensesTotal: ",
-            "$109,695.00",
-          ],
-          "type": "p",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Add Expense",
+              "className": "button",
+              "replace": false,
+              "to": "/create",
+            },
+            "ref": null,
+            "rendered": "Add Expense",
+            "type": [Function],
+          },
+          "type": "div",
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="content-container"
+        >
+          <h1
+            className="page-header__title"
+          >
+            Viewing 
+            <span>
+              2
+            </span>
+             
+            expenses
+             totaling 
+            <span>
+              $109,695.00
+            </span>
+          </h1>
+          <div
+            className="page-header_actions"
+          >
+            <Link
+              className="button"
+              replace={false}
+              to="/create"
+            >
+              Add Expense
+            </Link>
+          </div>
+        </div>,
+        "className": "page-header",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="page-header__title"
+            >
+              Viewing 
+              <span>
+                2
+              </span>
+               
+              expenses
+               totaling 
+              <span>
+                $109,695.00
+              </span>
+            </h1>,
+            <div
+              className="page-header_actions"
+            >
+              <Link
+                className="button"
+                replace={false}
+                to="/create"
+              >
+                Add Expense
+              </Link>
+            </div>,
+          ],
+          "className": "content-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Viewing ",
+                <span>
+                  2
+                </span>,
+                " ",
+                "expenses",
+                " totaling ",
+                <span>
+                  $109,695.00
+                </span>,
+              ],
+              "className": "page-header__title",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Viewing ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 2,
+                },
+                "ref": null,
+                "rendered": 2,
+                "type": "span",
+              },
+              " ",
+              "expenses",
+              " totaling ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "$109,695.00",
+                },
+                "ref": null,
+                "rendered": "$109,695.00",
+                "type": "span",
+              },
+            ],
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                className="button"
+                replace={false}
+                to="/create"
+              >
+                Add Expense
+              </Link>,
+              "className": "page-header_actions",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Add Expense",
+                "className": "button",
+                "replace": false,
+                "to": "/create",
+              },
+              "ref": null,
+              "rendered": "Add Expense",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

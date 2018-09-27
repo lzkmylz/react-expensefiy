@@ -20,141 +20,56 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Link
-          replace={false}
-          to="/edit/1"
-        >
-          <p>
+        <div>
+          <h3
+            className="list-item__title"
+          >
             description: 
             Gum
-          </p>
-        </Link>,
-        <p>
-          amount: 
+          </h3>
+          <span
+            className="list-item__sub-title"
+          >
+            1970-01-01
+          </span>
+        </div>,
+        <h3
+          className="list-item__data"
+        >
           $195.00
-        </p>,
-        <p>
-          createdAt: 
-          1970-01-01
-        </p>,
+        </h3>,
       ],
+      "className": "list-item",
+      "replace": false,
+      "to": "/edit/1",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": <p>
-            description: 
-            Gum
-          </p>,
-          "replace": false,
-          "to": "/edit/1",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              "description: ",
-              "Gum",
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            "description: ",
-            "Gum",
-          ],
-          "type": "p",
-        },
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "amount: ",
-            "$195.00",
+            <h3
+              className="list-item__title"
+            >
+              description: 
+              Gum
+            </h3>,
+            <span
+              className="list-item__sub-title"
+            >
+              1970-01-01
+            </span>,
           ],
         },
         "ref": null,
         "rendered": Array [
-          "amount: ",
-          "$195.00",
-        ],
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            "createdAt: ",
-            "1970-01-01",
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          "createdAt: ",
-          "1970-01-01",
-        ],
-        "type": "p",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <Link
-            replace={false}
-            to="/edit/1"
-          >
-            <p>
-              description: 
-              Gum
-            </p>
-          </Link>,
-          <p>
-            amount: 
-            $195.00
-          </p>,
-          <p>
-            createdAt: 
-            1970-01-01
-          </p>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": <p>
-              description: 
-              Gum
-            </p>,
-            "replace": false,
-            "to": "/edit/1",
-          },
-          "ref": null,
-          "rendered": Object {
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
@@ -163,52 +78,145 @@ ShallowWrapper {
                 "description: ",
                 "Gum",
               ],
+              "className": "list-item__title",
             },
             "ref": null,
             "rendered": Array [
               "description: ",
               "Gum",
             ],
-            "type": "p",
+            "type": "h3",
           },
-          "type": [Function],
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "1970-01-01",
+              "className": "list-item__sub-title",
+            },
+            "ref": null,
+            "rendered": "1970-01-01",
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "$195.00",
+          "className": "list-item__data",
         },
+        "ref": null,
+        "rendered": "$195.00",
+        "type": "h3",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <div>
+            <h3
+              className="list-item__title"
+            >
+              description: 
+              Gum
+            </h3>
+            <span
+              className="list-item__sub-title"
+            >
+              1970-01-01
+            </span>
+          </div>,
+          <h3
+            className="list-item__data"
+          >
+            $195.00
+          </h3>,
+        ],
+        "className": "list-item",
+        "replace": false,
+        "to": "/edit/1",
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "amount: ",
-              "$195.00",
+              <h3
+                className="list-item__title"
+              >
+                description: 
+                Gum
+              </h3>,
+              <span
+                className="list-item__sub-title"
+              >
+                1970-01-01
+              </span>,
             ],
           },
           "ref": null,
           "rendered": Array [
-            "amount: ",
-            "$195.00",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "description: ",
+                  "Gum",
+                ],
+                "className": "list-item__title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "description: ",
+                "Gum",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "1970-01-01",
+                "className": "list-item__sub-title",
+              },
+              "ref": null,
+              "rendered": "1970-01-01",
+              "type": "span",
+            },
           ],
-          "type": "p",
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "createdAt: ",
-              "1970-01-01",
-            ],
+            "children": "$195.00",
+            "className": "list-item__data",
           },
           "ref": null,
-          "rendered": Array [
-            "createdAt: ",
-            "1970-01-01",
-          ],
-          "type": "p",
+          "rendered": "$195.00",
+          "type": "h3",
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -10,13 +10,18 @@ export const ExpenseList = (props) => (
             <div className="show-for-desktop">Expense</div>
             <div className="show-for-desktop">Amount</div>
         </div>
-        <h1>ExpenseList</h1>
+        <div className="list-body">
         {
-            props.expenses.length === 0 ? (<p>No Expense Found!</p>) : 
+            props.expenses.length === 0 ? (
+                <div className="list-item list-item__message">
+                    <p>No Expense</p>
+                </div>
+            ) : 
             (props.expenses.map((expense) => {
                 return <ExpenseListItem key={expense.id} {...expense} />
             }))
         }
+        </div>
     </div>
 );
 
